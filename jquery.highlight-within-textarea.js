@@ -305,7 +305,6 @@
 			// replace start tokens with opening <mark> tags with class name
 			input = input.replace(/\{\{hwt-mark-start\|(\d+)\}\}/g, function(match, submatch) {
 				var className = boundaries[+submatch].className;
-				console.log('hello there??')
 				if (className) {
 					return '<mark style="background-color: ' + className + '; border-radius: 3px;">';
 				} else {
