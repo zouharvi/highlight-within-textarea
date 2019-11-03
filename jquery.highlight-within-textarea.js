@@ -336,6 +336,8 @@
 		},
 
 		destroy: function() {
+			this.$el.off('input.' + ID)
+			this.$el.off('scroll.' + ID)
 			this.$backdrop.remove();
 			this.$el
 				.unwrap()
